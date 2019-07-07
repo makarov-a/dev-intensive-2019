@@ -3,7 +3,7 @@ package ru.skillbranch.devintensive
 import org.junit.Test
 
 import org.junit.Assert.*
-import ru.skillbranch.devintensive.model.User
+import ru.skillbranch.devintensive.models.User
 import java.util.*
 
 /**

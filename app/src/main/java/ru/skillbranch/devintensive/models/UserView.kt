@@ -1,6 +1,4 @@
-package ru.skillbranch.devintensive.model
-
-import java.util.*
+package ru.skillbranch.devintensive.models
 
 class UserView(
     val id:String,
