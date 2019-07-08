@@ -3,7 +3,9 @@ package ru.skillbranch.devintensive
 import org.junit.Test
 
 import org.junit.Assert.*
+import ru.skillbranch.devintensive.extensions.format
 import ru.skillbranch.devintensive.models.User
+import ru.skillbranch.devintensive.utils.Utils
 import java.util.*
 
 /**
@@ -33,6 +35,19 @@ class ExampleUnitTest {
         val user2 = User.makeUser("John Cena2")
         val user3 = User.makeUser("John Cena3")
 
+    }
 
+    @Test
+    fun test_utils(){
+        println(Utils.parseFullName(null)) //null null
+        println(Utils.parseFullName("")) //null null
+        println(Utils.parseFullName(" ")) //null null
+        println(Utils.parseFullName("John")) //John null
+    }
+
+    @Test
+    fun test_date(){
+        println(Date().format()) //14:00:00 27.06.19
+        println(Date().format("HH:mm")) //14:00
     }
 }
