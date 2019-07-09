@@ -38,7 +38,7 @@ class ExampleUnitTest {
     }
 
     @Test
-    fun test_utils(){
+    fun test_parseFullName(){
         println(Utils.parseFullName(null)) //null null
         println(Utils.parseFullName("")) //null null
         println(Utils.parseFullName(" ")) //null null
